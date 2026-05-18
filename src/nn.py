@@ -137,7 +137,7 @@ if __name__ == "__main__":
   plt.plot(Ln, label="Raw Loss", color="blue", alpha=0.2)
 
   loss_smoothed = pd.Series(Ln).rolling(window=10).mean()
-  plt.plot(loss_smoothed, color="red", linewidth=2, label="Smoothed Loss (MA 100)")
+  plt.plot(loss_smoothed, color="red", linewidth=2, label="Smoothed Loss (MA 10)")
 
   plt.title("Loss History (Adam)")
   plt.xlabel("Steps")
